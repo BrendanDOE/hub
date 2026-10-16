@@ -1,0 +1,53 @@
+// themes/marble: consolidated rules. Compile through style.scss.
+
+html[data-theme="marble"][data-mode="dark"] {
+  --bg: #111315;
+  --bg-elevated: #191c1f;
+  --panel: #22262a;
+  --panel-2: #2b3035;
+  --panel-3: #353b41;
+  --text: #f2f4f5;
+  --muted: #b4bcc3;
+  --faint: #7b858d;
+  --line: rgba(177, 190, 199, 0.17);
+  --line-strong: rgba(177, 190, 199, 0.3);
+  --accent: #8e9da8;
+  --accent-2: #c1cbd1;
+  --accent-soft: rgba(142, 157, 168, 0.16);
+  --danger: #d27373;
+  --overlay: rgba(9, 11, 12, 0.8);
+  --ambient: rgba(193, 203, 209, 0.045);
+  --viewer-panel: rgba(17, 19, 21, 0.82);
+  --tile-hue: 205.38;
+  --tile-saturation: 28%;
+  --tile-lightness: 28%;
+  --tile-lightness-deep: 20%;
+  --tile-lightness-soft: 34%;
+  color-scheme: dark;
+}
+
+html[data-theme="marble"][data-mode="light"] {
+  --bg: #ececeb;
+  --bg-elevated: #f7f7f5;
+  --panel: #e4e5e3;
+  --panel-2: #d9dbd9;
+  --panel-3: #cccfcc;
+  --text: #242728;
+  --muted: #676e70;
+  --faint: #969c9d;
+  --line: rgba(45, 52, 54, 0.14);
+  --line-strong: rgba(45, 52, 54, 0.26);
+  --accent: #6d7a80;
+  --accent-2: #909da2;
+  --accent-soft: rgba(109, 122, 128, 0.12);
+  --danger: #a54d4d;
+  --overlay: rgba(44, 48, 49, 0.38);
+  --ambient: rgba(109, 122, 128, 0.05);
+  --viewer-panel: rgba(247, 247, 245, 0.9);
+  --tile-hue: 198.95;
+  --tile-saturation: 28%;
+  --tile-lightness: 80%;
+  --tile-lightness-deep: 70%;
+  --tile-lightness-soft: 90%;
+  color-scheme: light;
+}

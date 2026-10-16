@@ -1,0 +1,7 @@
+Options -Indexes
+<IfModule mod_dir.c>
+  DirectorySlash On
+</IfModule>
+<FilesMatch "^app\.json$">
+  Require all denied
+</FilesMatch>

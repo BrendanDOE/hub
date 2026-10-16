@@ -1,0 +1,25 @@
+import "./tab-extensions.js?v=20261015-mosaic";
+import { Application } from "./application.js?v=20261015-mosaic";
+import { ContentBoard } from "./content-board.js?v=20261015-mosaic";
+import { ContentEditor } from "./content-editor.js?v=20261015-mosaic";
+import { MediaManager } from "./media-manager.js?v=20261015-mosaic";
+import { CollectionManager } from "./collection-manager.js?v=20261015-mosaic";
+import { Calendar } from "./calendar.js?v=20261015-mosaic";
+import { MediaViewer } from "./media-viewer.js?v=20261015-mosaic";
+import { Watchlist } from "./watchlist.js?v=20261015-mosaic";
+import { TabController } from "./tabs.js?v=20261015-mosaic";
+
+// Construct features before starting; dependencies are explicit and share one state.
+const services = {};
+services.application = new Application(services);
+services.board = new ContentBoard(services);
+services.editor = new ContentEditor(services);
+services.media = new MediaManager(services);
+services.collections = new CollectionManager(services);
+services.calendar = new Calendar(services);
+services.viewer = new MediaViewer(services);
+services.tabs = new TabController(services);
+services.watchlist = new Watchlist(services);
+// Measure sticky controls only after the document and stylesheet have loaded.
+if (document.readyState === "complete") services.application.init();
+else window.addEventListener("load", () => services.application.init(), { once: true });

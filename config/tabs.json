@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dashboard",
+    "title": "Dashboard",
+    "filters": [
+      "Photography",
+      "Film",
+      "Animation",
+      "Audio",
+      "Design",
+      "Typography",
+      "Inspiration",
+      "History",
+      "Funny"
+    ],
+    "collections": true,
+    "calendar": true,
+    "views": ["asymmetric", "equal"],
+    "editor": "content",
+    "metadataFilters": true
+  }
+]

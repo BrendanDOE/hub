@@ -1,0 +1,53 @@
+// themes/umber: consolidated rules. Compile through style.scss.
+
+html[data-theme="umber"][data-mode="dark"] {
+  --bg: #180e09;
+  --bg-elevated: #21120b;
+  --panel: #2b190f;
+  --panel-2: #342014;
+  --panel-3: #3a2417;
+  --text: #f8e8c2;
+  --muted: #ba9468;
+  --faint: #7c5c3f;
+  --line: rgba(211, 152, 84, 0.17);
+  --line-strong: rgba(211, 152, 84, 0.3);
+  --accent: #c36d2e;
+  --accent-2: #e39a53;
+  --accent-soft: rgba(195, 109, 46, 0.16);
+  --danger: #d77d64;
+  --overlay: rgba(18, 9, 5, 0.76);
+  --ambient: rgba(180, 92, 42, 0.055);
+  --viewer-panel: rgba(24, 14, 9, 0.72);
+  --tile-hue: 25.37;
+  --tile-saturation: 43%;
+  --tile-lightness: 28%;
+  --tile-lightness-deep: 20%;
+  --tile-lightness-soft: 34%;
+  color-scheme: dark;
+}
+
+html[data-theme="umber"][data-mode="light"] {
+  --bg: #f0e2ca;
+  --bg-elevated: #f7ecd8;
+  --panel: #ead7ba;
+  --panel-2: #e4cfaf;
+  --panel-3: #dcc19d;
+  --text: #2c180e;
+  --muted: #7f5331;
+  --faint: #ad815d;
+  --line: rgba(80, 43, 21, 0.16);
+  --line-strong: rgba(80, 43, 21, 0.28);
+  --accent: #a85520;
+  --accent-2: #c76f2d;
+  --accent-soft: rgba(168, 85, 32, 0.12);
+  --danger: #a34230;
+  --overlay: rgba(59, 36, 20, 0.42);
+  --ambient: rgba(168, 85, 32, 0.07);
+  --viewer-panel: rgba(247, 236, 216, 0.86);
+  --tile-hue: 23.38;
+  --tile-saturation: 48%;
+  --tile-lightness: 80%;
+  --tile-lightness-deep: 70%;
+  --tile-lightness-soft: 90%;
+  color-scheme: light;
+}
