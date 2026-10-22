@@ -1,5 +1,5 @@
-import { isInstagramLink } from "./link-metadata.js?v=20261015-mosaic";
-import { state, els, $, $$, escapeHtml } from "./context.js?v=20261015-mosaic";
+import { isInstagramLink } from "./link-metadata.js?v=20261022-upload-errors";
+import { state, els, $, $$, escapeHtml } from "./context.js?v=20261022-upload-errors";
 
 // Keep all view icons at the original 24 px size.
 const VIEW_ICON_PATHS = {

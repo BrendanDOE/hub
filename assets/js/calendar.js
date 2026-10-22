@@ -1,12 +1,12 @@
-import { api } from "./api.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
+import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
 import {
   ENABLE_CALENDAR_MODULE,
   state,
   $,
   els,
   escapeHtml,
-} from "./context.js?v=20261015-mosaic";
+} from "./context.js?v=20261022-upload-errors";
 
 export class Calendar extends Feature {
   constructor(services) {

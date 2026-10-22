@@ -1,6 +1,6 @@
-import { api } from "./api.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
-import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261015-mosaic";
+import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
+import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261022-upload-errors";
 
 export class CollectionManager extends Feature {
   constructor(services) {

@@ -1,5 +1,5 @@
-import { isInstagramLink } from "./link-metadata.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
+import { isInstagramLink } from "./link-metadata.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
 import {
   MEDIA_TYPES,
   state,
@@ -9,7 +9,7 @@ import {
   defaultTileLabel,
   displayText,
   tileColor,
-} from "./context.js?v=20261015-mosaic";
+} from "./context.js?v=20261022-upload-errors";
 
 export class MediaViewer extends Feature {
   constructor(services) {

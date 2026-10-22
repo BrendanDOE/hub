@@ -1,5 +1,5 @@
-import { Feature } from "./feature.js?v=20261015-mosaic";
-import { IMAGE_LIMIT, encode, escapeHtml } from "./context.js?v=20261015-mosaic";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
+import { IMAGE_LIMIT, encode, escapeHtml } from "./context.js?v=20261022-upload-errors";
 
 export class MediaManager extends Feature {
   constructor(services) {

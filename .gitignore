@@ -4,3 +4,6 @@ node_modules/
 test-results/
 data/tmdb-config.php
 data/tmdb-cache/
+tests/
+.vscode/
+hub.zip

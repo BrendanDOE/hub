@@ -1,13 +1,13 @@
-import "./tab-extensions.js?v=20261015-mosaic";
-import { Application } from "./application.js?v=20261015-mosaic";
-import { ContentBoard } from "./content-board.js?v=20261015-mosaic";
-import { ContentEditor } from "./content-editor.js?v=20261015-mosaic";
-import { MediaManager } from "./media-manager.js?v=20261015-mosaic";
-import { CollectionManager } from "./collection-manager.js?v=20261015-mosaic";
-import { Calendar } from "./calendar.js?v=20261015-mosaic";
-import { MediaViewer } from "./media-viewer.js?v=20261015-mosaic";
-import { Watchlist } from "./watchlist.js?v=20261015-mosaic";
-import { TabController } from "./tabs.js?v=20261015-mosaic";
+import "./tab-extensions.js?v=20261022-upload-errors";
+import { Application } from "./application.js?v=20261022-upload-errors";
+import { ContentBoard } from "./content-board.js?v=20261022-upload-errors";
+import { ContentEditor } from "./content-editor.js?v=20261022-upload-errors";
+import { MediaManager } from "./media-manager.js?v=20261022-upload-errors";
+import { CollectionManager } from "./collection-manager.js?v=20261022-upload-errors";
+import { Calendar } from "./calendar.js?v=20261022-upload-errors";
+import { MediaViewer } from "./media-viewer.js?v=20261022-upload-errors";
+import { Watchlist } from "./watchlist.js?v=20261022-upload-errors";
+import { TabController } from "./tabs.js?v=20261022-upload-errors";
 
 // Construct features before starting; dependencies are explicit and share one state.
 const services = {};

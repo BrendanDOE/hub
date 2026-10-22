@@ -1,0 +1,56 @@
+// Indigold: dominant gold surfaces with indigo accents.
+html[data-theme="indigold"][data-mode="dark"] {
+  --bg: #19170f;
+  --bg-elevated: #211e14;
+  --panel: #2a2519;
+  --panel-2: #342d1d;
+  --panel-3: #403621;
+  --text: #fff3d4;
+  --muted: #d0c2a0;
+  --faint: #b4a580;
+  --line: rgba(255, 211, 88, 0.16);
+  --line-strong: rgba(255, 211, 88, 0.32);
+  --accent: #7aadc9;
+  --accent-2: #7aadc9;
+  --accent-soft: rgba(52, 111, 148, 0.20);
+  --danger: #f49b91;
+  --overlay: rgba(12, 10, 5, 0.84);
+  --ambient: rgba(255, 185, 21, 0.045);
+  --viewer-panel: rgba(33, 30, 20, 0.96);
+  --tile-hue: 43;
+  --tile-saturation: 38%;
+  --tile-lightness: 26%;
+  --tile-lightness-deep: 18%;
+  --tile-lightness-soft: 32%;
+  color-scheme: dark;
+}
+
+html[data-theme="indigold"][data-mode="light"] {
+  --bg: #ffd358;
+  --bg-elevated: #ffe28b;
+  --panel: #ffdc75;
+  --panel-2: #ffcc43;
+  --panel-3: #ffb915;
+  --text: #003f66;
+  --muted: #234b59;
+  --faint: #3b5251;
+  --line: rgba(0, 63, 102, 0.18);
+  --line-strong: rgba(0, 63, 102, 0.36);
+  --accent: #003f66;
+  --accent-2: #003f66;
+  --accent-soft: rgba(0, 63, 102, 0.10);
+  --danger: #922d35;
+  --overlay: rgba(53, 39, 7, 0.48);
+  --ambient: rgba(255, 185, 21, 0.14);
+  --viewer-panel: rgba(255, 226, 139, 0.96);
+  --tile-hue: 43;
+  --tile-saturation: 75%;
+  --tile-lightness: 72%;
+  --tile-lightness-deep: 62%;
+  --tile-lightness-soft: 82%;
+  color-scheme: light;
+}
+
+.theme-swatch--indigold span:nth-child(1) { background: #003f66; }
+.theme-swatch--indigold span:nth-child(2) { background: #ffb915; }
+.theme-swatch--indigold span:nth-child(3) { background: #ffd358; }

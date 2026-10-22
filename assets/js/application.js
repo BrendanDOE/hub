@@ -1,9 +1,9 @@
 import {
   STEPPER_PREFERENCES,
   normalizePreference,
-} from "./preferences.js?v=20261015-mosaic";
-import { api } from "./api.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
+} from "./preferences.js?v=20261022-upload-errors";
+import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
 import {
   ENABLE_CALENDAR_MODULE,
   state,
@@ -14,7 +14,7 @@ import {
   escapeHtml,
   favicon,
   normalizeUrl,
-} from "./context.js?v=20261015-mosaic";
+} from "./context.js?v=20261022-upload-errors";
 
 export class Application extends Feature {
   constructor(services) {
@@ -146,6 +146,7 @@ export class Application extends Feature {
           "caramel",
           "marble",
           "carbon-lavender",
+          "indigold",
         ].includes(saved.theme)
       )
         state.settings.theme = saved.theme;

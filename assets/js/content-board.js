@@ -1,7 +1,7 @@
-import { layoutMosaic } from "./mosaic-layout.js?v=20261015-mosaic";
-import { isInstagramLink } from "./link-metadata.js?v=20261015-mosaic";
-import { api } from "./api.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
+import { layoutMosaic } from "./mosaic-layout.js?v=20261022-upload-errors";
+import { isInstagramLink } from "./link-metadata.js?v=20261022-upload-errors";
+import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
 import {
   state,
   els,
@@ -11,7 +11,7 @@ import {
   defaultTileLabel,
   displayText,
   tileColor,
-} from "./context.js?v=20261015-mosaic";
+} from "./context.js?v=20261022-upload-errors";
 
 export class ContentBoard extends Feature {
   constructor(services) {

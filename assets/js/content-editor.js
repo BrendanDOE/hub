@@ -1,5 +1,5 @@
-import { api } from "./api.js?v=20261015-mosaic";
-import { Feature } from "./feature.js?v=20261015-mosaic";
+import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261022-upload-errors";
 import {
   IMAGE_LIMIT,
   encode,
@@ -18,7 +18,7 @@ import {
   safeHostname,
   displayText,
   tileColor,
-} from "./context.js?v=20261015-mosaic";
+} from "./context.js?v=20261022-upload-errors";
 
 export class ContentEditor extends Feature {
   constructor(services) {
