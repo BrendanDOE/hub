@@ -1,12 +1,12 @@
-import { api } from "./api.js?v=20261023-jobs-v14";
-import { Feature } from "./feature.js?v=20261023-jobs-v14";
+import { api } from "./api.js?v=20261023-jobs-v15";
+import { Feature } from "./feature.js?v=20261023-jobs-v15";
 import {
   ENABLE_CALENDAR_MODULE,
   state,
   $,
   els,
   escapeHtml,
-} from "./context.js?v=20261023-jobs-v14";
+} from "./context.js?v=20261023-jobs-v15";
 
 export class Calendar extends Feature {
   constructor(services) {

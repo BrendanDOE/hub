@@ -128,7 +128,7 @@
             "dueDate": "2026-10-20",
             "jobType": "Design",
             "priority": "Medium",
-            "status": "Complete",
+            "status": "In Progress",
             "artworkType": "Certificate",
             "copies": "1",
             "finishedSize": "A4 (210 × 297 mm)",
@@ -136,8 +136,8 @@
             "colour": "Full colour",
             "attachments": [],
             "createdAt": "2026-10-16T09:00:00+08:00",
-            "updatedAt": "2026-10-23T09:00:00+08:00",
-            "revision": 1
+            "updatedAt": "2026-10-23T03:09:28+00:00",
+            "revision": 3
         },
         {
             "id": "job-demo-007",
@@ -151,7 +151,7 @@
             "dueDate": "2026-10-22",
             "jobType": "Print",
             "priority": "Urgent",
-            "status": "On Hold",
+            "status": "In Progress",
             "artworkType": "Corflute Signage",
             "copies": "18",
             "finishedSize": "A3 (297 × 420 mm)",
@@ -159,8 +159,8 @@
             "colour": "Full colour",
             "attachments": [],
             "createdAt": "2026-10-17T09:00:00+08:00",
-            "updatedAt": "2026-10-23T02:37:33+00:00",
-            "revision": 2
+            "updatedAt": "2026-10-23T09:00:00+08:00",
+            "revision": 1
         },
         {
             "id": "job-demo-008",

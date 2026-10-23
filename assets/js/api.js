@@ -1,4 +1,4 @@
-import { cleanLinkInfo, cleanLinkTile } from "./link-metadata.js?v=20261023-jobs-v14";
+import { cleanLinkInfo, cleanLinkTile } from "./link-metadata.js?v=20261023-jobs-v15";
 const API_URL = "api.php";
 
 async function request(action, options = {}) {

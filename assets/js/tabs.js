@@ -1,5 +1,5 @@
-import { isInstagramLink } from "./link-metadata.js?v=20261023-jobs-v14";
-import { state, els, $, $$, escapeHtml } from "./context.js?v=20261023-jobs-v14";
+import { isInstagramLink } from "./link-metadata.js?v=20261023-jobs-v15";
+import { state, els, $, $$, escapeHtml } from "./context.js?v=20261023-jobs-v15";
 
 // Keep all view icons at the original 24 px size.
 const VIEW_ICON_PATHS = {

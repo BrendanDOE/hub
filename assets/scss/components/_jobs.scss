@@ -345,10 +345,18 @@
   align-items: center;
   color: var(--muted);
 }
-.job-card-footer {
-  padding-top: 10px;
-  border-top: 1px solid var(--line);
-  margin-top: 16px;
+.job-card-footer .job-subject{
+    padding-top: 10px;
+    border: 1px solid var(--text);
+    margin-top: 16px;
+
+    border-radius: 15rem;
+    padding: 0.2rem; 
+
+    &:hover{
+        background: #fff;
+        color: #000
+    }
 }
 .job-lane-empty {
   font-size: 12px;
@@ -984,38 +992,124 @@ body.is-job-column-resizing * {
   border-color: rgba(238, 234, 241, 1);
 }
 
-/* Project Location: full-width field above Attachments */
-.job-project-location {
+/* Project assets: labelled folder paths */
+.job-project-assets {
   margin-top: 24px;
 }
-.job-project-location .field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.job-project-assets h3 {
   font-size: 12px;
-  min-width: 0;
+  color: var(--muted);
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
-.job-project-location-row {
-  display: flex;
+.project-assets-list {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr) auto;
   gap: 10px;
   align-items: stretch;
 }
-.job-project-location-row input {
-  flex: 1 1 auto;
+.project-asset-row {
+  display: contents;
 }
-.job-project-location-row button {
-  flex: 0 0 auto;
-  white-space: nowrap;
+.project-asset-actions {
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+.project-asset-actions button,
+.project-asset-add {
   border: 1px solid var(--line-strong);
   background: var(--panel);
   color: var(--text);
   border-radius: 8px;
-  padding: 0 16px;
   font: inherit;
   cursor: pointer;
 }
-.job-project-location-row button:hover {
+.project-asset-actions button {
+  padding: 0 16px;
+  white-space: nowrap;
+}
+.project-asset-actions button:hover {
   border-color: var(--accent);
+}
+.project-asset-remove {
+  display: none;
+  padding: 0 12px !important;
+  color: var(--muted);
+}
+.project-assets-list.has-multiple .project-asset-remove {
+  display: block;
+}
+.project-asset-add {
+  grid-column: 1 / 3;
+  padding: 12px;
+  border-style: dashed;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+}
+.project-asset-add:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+.path-copied-popup {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--panel-3, var(--panel));
+  color: var(--text);
+  border: 1px solid var(--accent);
+  box-shadow: 0 8px 24px #0006;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+  animation: path-copied-in 0.18s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.path-copied-popup::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 100%;
+  width: 8px;
+  height: 8px;
+  margin-top: -5px;
+  background: inherit;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transform: rotate(45deg);
+}
+.path-copied-popup.is-leaving {
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+@keyframes path-copied-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 720px) {
+  .project-assets-list {
+    grid-template-columns: 1fr;
+  }
+  .project-asset-row {
+    display: grid;
+    gap: 10px;
+  }
+  .project-asset-add {
+    grid-column: auto;
+  }
 }
 
 /* Jobs page layout: search left, view switcher right on one row; no panel headings */

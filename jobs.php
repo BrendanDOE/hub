@@ -23,7 +23,7 @@ $status = $input['status'] ?? 'Pending';
 if (!in_array($status, $statuses, true)) fail('Invalid status');
 $values = ['status'=>$status];
 if ($action === 'jobs.save') {
-    foreach (['subject','requester','assignedTo','department','projectLocation','description','dueDate','jobType','priority','artworkType','copies','finishedSize','paperWeight','colour'] as $key) {
+    foreach (['subject','requester','assignedTo','department','description','dueDate','jobType','priority','artworkType','copies','finishedSize','paperWeight','colour'] as $key) {
         $value = $input[$key] ?? '';
         if (!is_string($value) || strlen($value) > ($key === 'description' ? 10000 : 1000)) fail('Invalid '.$key);
         $values[$key] = trim($value);
@@ -33,6 +33,15 @@ if ($action === 'jobs.save') {
     if ($values['dueDate'] !== '') {
         $date = DateTimeImmutable::createFromFormat('!Y-m-d', $values['dueDate']);
         if (!$date || $date->format('Y-m-d') !== $values['dueDate']) fail('Invalid due date');
+    }
+    $assets = json_decode(is_string($input['projectAssets'] ?? '') ? ($input['projectAssets'] ?? '[]') : '', true);
+    if (!is_array($assets) || !array_is_list($assets) || count($assets) > 20) fail('Invalid project assets');
+    $values['projectAssets'] = [];
+    foreach ($assets as $asset) {
+        $label = is_array($asset) ? ($asset['label'] ?? '') : null; $path = is_array($asset) ? ($asset['path'] ?? '') : null;
+        if (!is_string($label) || !is_string($path) || strlen($label) > 200 || strlen($path) > 1000) fail('Invalid project assets');
+        $label = trim($label); $path = trim($path);
+        if ($label !== '' || $path !== '') $values['projectAssets'][] = ['label'=>$label, 'path'=>$path];
     }
     if ($values['copies'] !== '' && (!ctype_digit($values['copies']) || (int)$values['copies'] < 1 || (int)$values['copies'] > 1000000)) fail('Copies must be between 1 and 1000000');
 }

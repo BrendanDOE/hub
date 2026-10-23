@@ -1,14 +1,14 @@
-import { Jobs } from "./jobs.js?v=20261023-jobs-v14";
-import "./tab-extensions.js?v=20261023-jobs-v14";
-import { Application } from "./application.js?v=20261023-jobs-v14";
-import { ContentBoard } from "./content-board.js?v=20261023-jobs-v14";
-import { ContentEditor } from "./content-editor.js?v=20261023-jobs-v14";
-import { MediaManager } from "./media-manager.js?v=20261023-jobs-v14";
-import { CollectionManager } from "./collection-manager.js?v=20261023-jobs-v14";
-import { Calendar } from "./calendar.js?v=20261023-jobs-v14";
-import { MediaViewer } from "./media-viewer.js?v=20261023-jobs-v14";
-import { Watchlist } from "./watchlist.js?v=20261023-jobs-v14";
-import { TabController } from "./tabs.js?v=20261023-jobs-v14";
+import { Jobs } from "./jobs.js?v=20261023-jobs-v15";
+import "./tab-extensions.js?v=20261023-jobs-v15";
+import { Application } from "./application.js?v=20261023-jobs-v15";
+import { ContentBoard } from "./content-board.js?v=20261023-jobs-v15";
+import { ContentEditor } from "./content-editor.js?v=20261023-jobs-v15";
+import { MediaManager } from "./media-manager.js?v=20261023-jobs-v15";
+import { CollectionManager } from "./collection-manager.js?v=20261023-jobs-v15";
+import { Calendar } from "./calendar.js?v=20261023-jobs-v15";
+import { MediaViewer } from "./media-viewer.js?v=20261023-jobs-v15";
+import { Watchlist } from "./watchlist.js?v=20261023-jobs-v15";
+import { TabController } from "./tabs.js?v=20261023-jobs-v15";
 
 // Construct features before starting; dependencies are explicit and share one state.
 const services = {};

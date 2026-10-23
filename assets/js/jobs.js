@@ -1,8 +1,8 @@
-import { JobsTable } from "./jobs-table.js?v=20261023-jobs-v14";
-import { JobsDrag } from "./jobs-drag.js?v=20261023-jobs-v14";
-import { Feature } from "./feature.js?v=20261023-jobs-v14";
-import { state, $, escapeHtml as esc } from "./context.js?v=20261023-jobs-v14";
-import { api } from "./api.js?v=20261023-jobs-v14";
+import { JobsTable } from "./jobs-table.js?v=20261023-jobs-v15";
+import { JobsDrag } from "./jobs-drag.js?v=20261023-jobs-v15";
+import { Feature } from "./feature.js?v=20261023-jobs-v15";
+import { state, $, escapeHtml as esc } from "./context.js?v=20261023-jobs-v15";
+import { api } from "./api.js?v=20261023-jobs-v15";
 const TYPES = [
   ["Design", "Artwork, branding, and documents", "✦"],
   ["Print", "Print, finishing, and production", "▤"],
@@ -96,7 +96,7 @@ export class Jobs extends Feature {
     this.query = "";
     this.week = 0;
     this.month = 0;
-    this.scheduleMode = "month";
+    this.scheduleMode = "week";
     this.hiddenColumns = {};
     try {
       const saved = JSON.parse(localStorage.getItem(COLUMN_KEY));
@@ -265,6 +265,12 @@ export class Jobs extends Feature {
         this.dialog.close();
       const copy = e.target.closest("[data-copy-project-path]");
       if (copy) this.copyProjectPath(copy);
+      if (e.target.closest("[data-add-asset]")) this.addAsset();
+      const remove = e.target.closest("[data-remove-asset]");
+      if (remove) {
+        remove.closest(".project-asset-row").remove();
+        this.syncAssetRows();
+      }
     });
     this.dialog.addEventListener("cancel", (e) => {
       if (this.busy) e.preventDefault();
@@ -451,7 +457,7 @@ export class Jobs extends Feature {
     }</tbody></table></div>`;
   }
   board(rows) {
-    return `<p class="jobs-muted jobs-hint">Drag cards between columns. Jobs land in due-date order. Use Edit to change status with a keyboard.</p><div class="jobs-board">${STATUSES.map(
+    return `<div class="jobs-board">${STATUSES.map(
       (status) => {
         const jobs = rows.filter((j) => j.status === status);
         return `<section class="job-lane" data-status="${status}"><h3>${status}<span>${jobs.length}</span></h3><div class="job-lane-cards">${jobs.map((j) => `<article class="job-card" draggable="false" data-job="${esc(j.id)}"><div class="job-card-meta"><span>JOB-${j.number} · ${esc(j.jobType)}</span><span class="job-pill" data-priority="${esc(j.priority)}">${esc(j.priority)}</span></div><h4>${esc(j.subject)}</h4><p>${esc(j.assignedTo || "Unassigned")}</p><div class="job-card-footer"><span class="${overdue(j) ? "job-overdue" : ""}">${esc(prettyDate(j.dueDate))}</span>${this.editButton(j, "Edit")}</div></article>`).join("") || '<div class="job-lane-empty">No jobs here</div>'}</div></section>`;
@@ -544,8 +550,9 @@ export class Jobs extends Feature {
       "jobType",
       "Job type",
       TYPES.map((t) => t[0]),
-    )}${field("department", "Department", this.departmentOptions(j.department))}${field("subject", "Subject", null, "text", true)}${field("description", "Description")}<div class="job-form-pair">${field("dueDate", "Due date", null, "date")}${field("priority", "Priority", ["Low", "Medium", "High", "Urgent"])}</div></section><section class="job-form-section"><h3>Assignment & production</h3>${field("assignedTo", "Assigned to", this.userOptions(j.assignedTo))}${field("status", "Status", STATUSES)}<div id="jobProduction">${field("artworkType", "Artwork type", ["", ...ARTWORK])}<div class="job-form-pair">${field("copies", "Number of copies", null, "number")}${field("finishedSize", "Finished size", ["A4 (210 × 297 mm)", "A3 (297 × 420 mm)", "A5 (148 × 210 mm)", "DL (110 × 220 mm)", "Custom"])}</div>${field("paperWeight", "Paper weight", ["N/A", "80 gsm", "100 gsm", "150 gsm", "200 gsm", "250 gsm", "300 gsm", "350 gsm", "Other"])}${field("colour", "Colour", ["Full colour", "Black and white", "Spot colour"])}</div></section></div><section class="job-project-location"><label class="field" for="jobProjectLocation"><span>Project Location</span><div class="job-project-location-row"><input id="jobProjectLocation" name="projectLocation" type="text" maxlength="1000" value="${esc(j.projectLocation || "")}" placeholder="Folder path for this project"><button type="button" data-copy-project-path>Copy Project Path</button></div></label></section><section class="job-attachments"><h3>Attachments</h3><div>${job ? this.attachments(job) : ""}</div><label class="field"><span>Add files (up to 20 MB each)</span><input type="file" name="attachments[]" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.txt,.csv,.docx,.xlsx,.pptx,.zip"></label><small>PDF, images, Office documents, text, CSV, and ZIP files.</small></section><p id="jobError" role="alert"></p></div><footer class="job-form-footer"><button type="button" data-job-close>Cancel</button><button type="submit" class="job-save">${job ? "Save changes" : "Create job"}</button></footer></form>`;
+    )}${field("department", "Department", this.departmentOptions(j.department))}${field("subject", "Subject", null, "text", true)}${field("description", "Description")}<div class="job-form-pair">${field("dueDate", "Due date", null, "date")}${field("priority", "Priority", ["Low", "Medium", "High", "Urgent"])}</div></section><section class="job-form-section"><h3>Assignment & production</h3>${field("assignedTo", "Assigned to", this.userOptions(j.assignedTo))}${field("status", "Status", STATUSES)}<div id="jobProduction">${field("artworkType", "Artwork type", ["", ...ARTWORK])}<div class="job-form-pair">${field("copies", "Number of copies", null, "number")}${field("finishedSize", "Finished size", ["A4 (210 × 297 mm)", "A3 (297 × 420 mm)", "A5 (148 × 210 mm)", "DL (110 × 220 mm)", "Custom"])}</div>${field("paperWeight", "Paper weight", ["N/A", "80 gsm", "100 gsm", "150 gsm", "200 gsm", "250 gsm", "300 gsm", "350 gsm", "Other"])}${field("colour", "Colour", ["Full colour", "Black and white", "Spot colour"])}</div></section></div><section class="job-project-assets"><h3>Project Assets</h3><div class="project-assets-list" id="projectAssets">${this.assetsFor(j).map((a) => this.assetRow(a)).join("")}<button type="button" class="project-asset-add" data-add-asset>Add Additional Folder</button></div></section><section class="job-attachments"><h3>Attachments</h3><div>${job ? this.attachments(job) : ""}</div><label class="field"><span>Add files (up to 20 MB each)</span><input type="file" name="attachments[]" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.txt,.csv,.docx,.xlsx,.pptx,.zip"></label><small>PDF, images, Office documents, text, CSV, and ZIP files.</small></section><p id="jobError" role="alert"></p></div><footer class="job-form-footer"><button type="button" data-job-close>Cancel</button><button type="submit" class="job-save">${job ? "Save changes" : "Create job"}</button></footer></form>`;
     this.togglePrint();
+    this.syncAssetRows();
     this.dialog.showModal();
   }
   // Users come from the Settings "User" dropdown, so there is one source of truth.
@@ -558,17 +565,48 @@ export class Jobs extends Feature {
   }
   departmentOptions(current = "") {
     // Keep a legacy free-text value selectable so editing an old job doesn't wipe it.
-    return [
-      "",
-      ...DEPARTMENTS,
-      ...(current && !DEPARTMENTS.includes(current) ? [current] : []),
-    ];
+    return ["", ...DEPARTMENTS, ...(current && !DEPARTMENTS.includes(current) ? [current] : [])];
+  }
+  // Project assets: any number of labelled folder paths per job.
+  assetsFor(job) {
+    const list = Array.isArray(job.projectAssets)
+      ? job.projectAssets
+      : job.projectLocation
+        ? [{ label: "", path: job.projectLocation }]
+        : [];
+    return list.length ? list : [{ label: "", path: "" }];
+  }
+  assetRow(a = {}) {
+    return `<div class="project-asset-row"><input type="text" class="project-asset-label" maxlength="200" placeholder="Label" aria-label="Folder label" value="${esc(a.label || "")}"><input type="text" class="project-asset-path" maxlength="1000" placeholder="Folder path for this project" aria-label="Folder path" value="${esc(a.path || "")}"><div class="project-asset-actions"><button type="button" data-copy-project-path>Copy Project Path</button><button type="button" class="project-asset-remove" data-remove-asset aria-label="Remove folder">×</button></div></div>`;
+  }
+  collectAssets() {
+    return [...this.dialog.querySelectorAll(".project-asset-row")]
+      .map((row) => ({
+        label: row.querySelector(".project-asset-label").value.trim(),
+        path: row.querySelector(".project-asset-path").value.trim(),
+      }))
+      .filter((a) => a.label || a.path);
+  }
+  syncAssetRows() {
+    const list = this.dialog.querySelector("#projectAssets");
+    list?.classList.toggle(
+      "has-multiple",
+      list.querySelectorAll(".project-asset-row").length > 1,
+    );
+  }
+  addAsset() {
+    const list = this.dialog.querySelector("#projectAssets");
+    list
+      .querySelector("[data-add-asset]")
+      .insertAdjacentHTML("beforebegin", this.assetRow());
+    this.syncAssetRows();
+    list.querySelector(".project-asset-row:last-of-type .project-asset-label")?.focus();
   }
   async copyProjectPath(button) {
-    const input = this.dialog.querySelector('[name="projectLocation"]');
-    const text = input?.value || "";
+    const input = button.closest(".project-asset-row").querySelector(".project-asset-path");
+    const text = input.value;
     if (!text) {
-      input?.focus();
+      input.focus();
       return;
     }
     try {
@@ -581,10 +619,17 @@ export class Jobs extends Feature {
         return;
       }
     }
-    const label = button.textContent;
-    button.textContent = "Copied!";
-    clearTimeout(this.copyTimer);
-    this.copyTimer = setTimeout(() => (button.textContent = label), 1500);
+    this.showCopied(button.parentElement);
+  }
+  showCopied(anchor) {
+    anchor.querySelector(".path-copied-popup")?.remove();
+    const pop = document.createElement("span");
+    pop.className = "path-copied-popup";
+    pop.setAttribute("role", "status");
+    pop.textContent = "Path Copied";
+    anchor.append(pop);
+    setTimeout(() => pop.classList.add("is-leaving"), 1100);
+    setTimeout(() => pop.remove(), 1400);
   }
   togglePrint() {
     const show = ["Design", "Print"].includes(
@@ -597,6 +642,7 @@ export class Jobs extends Feature {
     if (this.busy) return;
     const form = e.target;
     const data = new FormData(form);
+    data.set("projectAssets", JSON.stringify(this.collectAssets()));
     if (this.editing) {
       data.set("id", this.editing.id);
       data.set("revision", this.editing.revision);
