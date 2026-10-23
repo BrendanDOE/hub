@@ -14,5 +14,4 @@ deployment:
     - /bin/cp data/.htaccess $DEPLOYPATH/data/
     - /bin/cp -R config $DEPLOYPATH
     - /bin/cp user.ini $DEPLOYPATH
-    - /bin/cp .user.ini $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH

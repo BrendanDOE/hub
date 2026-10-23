@@ -1,0 +1,1798 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OpenAI//WA 2026 Community Awareness Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WA Community Awareness + SIDE 2026-2027
+BEGIN:VEVENT
+UID:c95405d7-83cf-433d-a341-a17135488325@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:New Year's Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b014382a-9df9-4d67-8ffd-4c1b4191e716@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260104
+DTEND;VALUE=DATE:20260105
+SUMMARY:World Braille Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a6d02c9-985f-4900-adfa-b97b26a347eb@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260125
+DTEND;VALUE=DATE:20260126
+SUMMARY:Free the Flag anniversary
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cf81889c-97cb-4964-8906-6c2a45ff2c6c@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260126
+DTEND;VALUE=DATE:20260127
+SUMMARY:Australia Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:26c34cdf-6930-4866-aae2-536bf9f178e4@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260211
+DTEND;VALUE=DATE:20260212
+SUMMARY:International Day of Women and Girls in Science
+CATEGORIES:Inclusion
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db35a185-a27c-47b1-8ab5-d4e751341052@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+SUMMARY:Anniversary of the National Apology to Australia's Indigenous Peo
+ ples
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:018bad36-6d17-434a-8f04-f827f73fc9ab@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260221
+DTEND;VALUE=DATE:20260222
+SUMMARY:International Mother Language Day
+CATEGORIES:Multicultural
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:04a9d8da-cda4-402e-a65e-51c86c49b13b@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260301
+DTEND;VALUE=DATE:20260302
+SUMMARY:Zero Discrimination Day
+CATEGORIES:Inclusion
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:71308417-be60-4493-a515-6dd2fbffd0e0@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+SUMMARY:Labour Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8c3d472d-ee18-4996-b725-35a8ef6c502c@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260308
+DTEND;VALUE=DATE:20260309
+SUMMARY:International Women's Day
+CATEGORIES:Inclusion
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a1f62487-57c7-4d43-808e-69a49fd92902@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260315
+DTEND;VALUE=DATE:20260322
+SUMMARY:Harmony Week WA
+CATEGORIES:Multicultural
+DESCRIPTION:WA annual Harmony Week period\, 15–21 March.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:59b7b741-1b6a-4f59-b70d-d40d9725244d@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260321
+SUMMARY:Neurodiversity Celebration Week
+CATEGORIES:Neurodiversity & Disability
+DESCRIPTION:Official 2026 dates: 16–20 March.
+URL:https://www.neurodiversityweek.com/events-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab943eae-bfcc-43ba-906a-17d1e7671647@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260320
+SUMMARY:National Close the Gap Day
+CATEGORIES:First Nations
+DESCRIPTION:2026 date listed in the WA Diversity and Inclusion Calendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:76c96550-56b5-4b86-8c78-df9cbcd2e63a@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260321
+DTEND;VALUE=DATE:20260322
+SUMMARY:World Down Syndrome Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c8b784c7-ceb2-4d1c-8871-5afdb38485f9@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260331
+DTEND;VALUE=DATE:20260401
+SUMMARY:Transgender Day of Visibility
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e6c84335-eeb1-4992-b822-1dff3210c480@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+SUMMARY:World Autism Awareness Day / World Autism Day
+CATEGORIES:Neurodiversity & Disability
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dc83985f-78aa-42d0-8933-b2eb8f5cad2e@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Good Friday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d99eb157-c81f-4f3b-9597-0c31b7d1c484@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260420
+SUMMARY:WA public school holidays — Autumn break
+CATEGORIES:WA School Holidays
+DESCRIPTION:Official WA public school break period based on Department of
+  Education term dates. Individual schools may have additional developmen
+ t days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7786b2f8-e233-4635-943b-3ea1984f5c48@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Easter Sunday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6e09a6b0-ef90-4023-b6a0-3879577375c9@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+SUMMARY:Easter Monday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb9ce221-081c-4cf0-8e0e-d633f7a8b0d7@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260417
+SUMMARY:Youth Week WA
+CATEGORIES:Youth
+DESCRIPTION:Official 2026 WA Youth Week dates: 10–16 April.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ca4258e6-7a65-437c-88b9-392c45f8bd87@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260426
+SUMMARY:ANZAC Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:03e0e31b-372a-4c15-b9b0-22cacdd8c690@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260428
+SUMMARY:ANZAC Day additional public holiday — WA
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dd051d1b-0c5e-4110-9fe1-cd497b4a5350@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+SUMMARY:IDAHOBIT — International Day Against Homophobia\, Biphobia\, In
+ terphobia and Transphobia
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:de1f68fe-6e4c-4128-ae52-9d1e8d3e05df@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+SUMMARY:Global Accessibility Awareness Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:2026 date listed in the WA Diversity and Inclusion Calendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb44ef4a-cb0f-42a6-96c6-e7d9d0d9b338@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+SUMMARY:World Day for Cultural Diversity for Dialogue and Development
+CATEGORIES:Multicultural
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b8617f5a-ad3a-4be9-8b52-55b423e76840@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:National Sorry Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:80d5066a-8aad-4984-873f-8398a00acbff@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+SUMMARY:Anniversary of the 1967 Referendum
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:539702f8-dc7c-4a93-8408-07001bb4bb43@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260604
+SUMMARY:National Reconciliation Week
+CATEGORIES:First Nations
+DESCRIPTION:Annual dates: 27 May to 3 June.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:10fb4b87-9861-4a98-b341-6174e8fc69f8@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+SUMMARY:Anniversary of the Torres Strait Islander Flag
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:802f25fa-fd73-43e5-bedb-7bc087f0a6f1@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260701
+SUMMARY:Pride Month
+CATEGORIES:LGBTQIA+
+DESCRIPTION:June observance included in the WA diversity and inclusion ca
+ lendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e704cf03-fab5-4cda-98ab-252e61e50229@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+SUMMARY:Western Australia Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d2fa048a-3e41-4238-b123-5488de314076@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260604
+SUMMARY:Mabo Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4047d34a-e1b9-41d4-b037-33080ffc88f8@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260621
+SUMMARY:Refugee Week
+CATEGORIES:Multicultural
+DESCRIPTION:Refugee Week Australia is observed Sunday to Saturday in the 
+ week containing 20 June\; in 2026 this is 14–20 June.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f820df22-f1c8-4aa1-b299-2cbe2c48e4ad@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+SUMMARY:World Refugee Day
+CATEGORIES:Multicultural
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d3c924e6-5108-4e45-bfe2-1beaa9f40dbf@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Coming of the Light
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:862b73ff-c367-4a46-a300-34e32a764dcf@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260720
+SUMMARY:WA public school holidays — Winter break
+CATEGORIES:WA School Holidays
+DESCRIPTION:Official WA public school break period based on Department of
+  Education term dates. Individual schools may have additional developmen
+ t days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a9d314a9-2024-4897-858e-cff83c6cb588@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260713
+SUMMARY:NAIDOC Week
+CATEGORIES:First Nations
+DESCRIPTION:Official 2026 NAIDOC Week dates: 5–12 July.
+URL:https://www.naidoc.org.au/about/naidoc-week
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:203ef13b-4083-4fc1-ac4c-94f11948d81e@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260709
+DTEND;VALUE=DATE:20260710
+SUMMARY:Anniversary of the first raising of the Aboriginal Flag
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:45123b20-8fa3-40af-9967-74808cfe9c09@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:International Non-Binary People's Day
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:60940716-f93f-49e3-b2ce-72040500394c@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
+SUMMARY:World Youth Skills Day
+CATEGORIES:Youth
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bbb7bae5-f38b-4b1c-8d8c-1f0ab2a94739@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:National Aboriginal and Torres Strait Islander Children's Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0bc2f8d2-3a39-48bc-8366-7cd27eeafbdd@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260809
+DTEND;VALUE=DATE:20260810
+SUMMARY:International Day of the World's Indigenous Peoples
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3fd36196-0120-4a50-9fcd-c7988b5faed9@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260813
+SUMMARY:International Youth Day
+CATEGORIES:Youth
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ccb04db2-9646-4034-b31a-4180a94218d9@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Wear It Purple Day
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Official 2026 Wear It Purple Day date: Friday 28 August.
+URL:https://www.wearitpurple.org/events-calendar/wear-it-purple-day-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bc0e3876-31c2-466b-ad33-bc51cd8e4b4a@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:R U OK?Day
+CATEGORIES:Mental Health
+DESCRIPTION:Official 2026 R U OK?Day date: Thursday 10 September.
+URL:https://www.ruok.org.au/conversation-convoy
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4dc4487c-6fe8-4fac-a292-9cf328e741ab@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:International Day of Sign Languages
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:04ef8658-43ae-494a-8d5c-ecd0bf913fe9@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20261012
+SUMMARY:WA public school holidays — Spring break
+CATEGORIES:WA School Holidays
+DESCRIPTION:Official WA public school break period based on Department of
+  Education term dates. Individual schools may have additional developmen
+ t days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5e61570a-6f5a-472b-b7dc-c85683719409@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:King's Birthday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f31ec50-e721-4ab9-aba0-4eca13410abb@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261012
+SUMMARY:WA Mental Health Week
+CATEGORIES:Mental Health
+DESCRIPTION:Official 2026 WA Mental Health Week dates: 4–11 October.
+URL:https://mentalhealthweek.org.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:171f40d7-2426-4131-b974-d48fe0160932@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:World Mental Health Day
+CATEGORIES:Mental Health
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0f09f71e-ceba-4e81-a7a0-5da27b16cd67@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261018
+SUMMARY:National Carers Week
+CATEGORIES:Carers
+DESCRIPTION:Official 2026 National Carers Week dates: 11–17 October.
+URL:https://carersweek.com.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:78ef731e-4bd3-41af-8695-f1f93437e5b4@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:International Pronouns Day
+CATEGORIES:LGBTQIA+
+DESCRIPTION:2026 date listed in the WA Diversity and Inclusion Calendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a928374-84f8-4850-a784-b07585de11c2@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261102
+SUMMARY:Children's Week WA
+CATEGORIES:Children & Youth
+DESCRIPTION:Official Children's Week WA 2026 dates: 24 October to 1 Novem
+ ber.
+URL:https://www.childrensweekwa.org.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb1d220a-9d51-423a-9c9b-bc0883105015@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261201
+SUMMARY:PrideFEST WA — November
+CATEGORIES:LGBTQIA+
+DESCRIPTION:WA diversity and inclusion calendar identifies November as th
+ e PrideFEST period.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5e6c09ce-cdde-4eef-821c-b63f2d027f71@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261120
+SUMMARY:Transgender Awareness Week
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance 13–19 November.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2c3be579-0555-412a-ba97-01cf5a9c7826@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:International Day for Tolerance
+CATEGORIES:Inclusion
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6d1d2cc3-8231-440d-bdbf-60e5fb5eb2db@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Transgender Day of Remembrance
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:95b8bea3-70c8-4172-9908-99bbfd999e77@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261211
+SUMMARY:16 Days in WA
+CATEGORIES:Safety & Inclusion
+DESCRIPTION:Annual WA campaign period from 25 November to 10 December.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fdb62fc7-fd0e-4a40-9356-a22a856e36b1@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:International Day of People with Disability
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eb0881f3-a36b-48b4-a49d-8c8cca303e7a@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Human Rights Day
+CATEGORIES:Human Rights
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:56039fed-b8a1-4b24-8ad7-3861e69c6fa7@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Anniversary of the Convention on the Rights of Persons with Disab
+ ilities
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual day of significance included in the WA Public Sector C
+ ommission diversity and inclusion calendar or corresponding internationa
+ l observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:97e082ac-877f-41df-bceb-2c69cb7e96cb@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20270201
+SUMMARY:WA public school holidays — Summer break begins
+CATEGORIES:WA School Holidays
+DESCRIPTION:Official WA public school break period based on Department of
+  Education term dates. Individual schools may have additional developmen
+ t days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:47181bd5-76bc-4145-afd3-b14335b0b1d7@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Christmas Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e39d44c8-3a68-4786-8690-fd16d1288531@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Boxing Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b635103e-7c2a-454a-97bf-68ad488dcbee@openai-wa-calendar
+DTSTAMP:20261003T035419Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:Boxing Day additional public holiday — WA
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Official 2026 Western Australian public holiday.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:be3c961c-57e7-5293-bf2a-d6c1e0c59c70@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:SIDE: Australia Day - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c200dbab-f10b-5d4d-9e33-159d32b4c37c@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+SUMMARY:SIDE: SDD - Principal\, DPs\, HOLAs\, and PCs
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:63099787-f2e4-5e25-bb67-098de95f163a@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270130
+SUMMARY:SIDE: SDD - All Teaching Staff
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4544dbef-b2f6-560a-adf3-1d30b198b175@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:SIDE: Students commence - Term 1\, Semester 1
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e8ed1b65-f4c4-529f-b44d-c797783cf872@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:SIDE: Year 10 Immunisations
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:54fb695f-a875-59af-a98d-e3cb2fe409bc@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4b197d74-9745-5121-8b80-fd7db7e883dd@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:SIDE: OLNA T1 Window - Year 11 and 12 Only
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b32c402a-5a96-5d3f-8bfe-5e4e339ae08f@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:SIDE: Labour Day - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:644f4553-395c-506f-a164-672739fee16b@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:SIDE: Year 7 Immunisations
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:89461fa4-864a-536b-a3dd-a813282dd3af@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:SIDE: Common Out of Hours Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d3c05259-5a92-51b2-9ffa-6a99da5562b1@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:SIDE: NAPLAN (Onsite)
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9b67a973-a525-5df1-92b2-9976934aa97f@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+SUMMARY:SIDE: NAPLAN (Onsite)
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:86bbee61-03f1-57c1-8aec-8bdabe2aee8d@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:SIDE: SDD
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ec84577f-06fd-53c3-bb73-0f53b56647e6@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:SIDE: Good Friday - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:54b20c7d-3321-5db2-bfbf-91d301e9d182@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6adad5af-e33e-5355-9ef3-b0252ef1c3b8@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:SIDE: Easter Monday - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d58a6d37-7995-55a8-89ab-699512613b91@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:SIDE: Easter Tuesday - Non-Teaching Day
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0f892eab-eb8f-5512-8430-570bb6045d72@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:SIDE: Parent/Caregiver-Teacher Interviews
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:77c7fe68-06e0-5cf4-bc36-18a69dc039a4@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270426
+SUMMARY:SIDE: School Break
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a3f15462-fdc9-5aba-bcb4-67bdffe8eff2@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270426
+SUMMARY:SIDE: EST Dispatch (Week 2 of Holidays)
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied. The image prints 10-25 April 2027 and also says Week 2
+  of Holidays. The printed date range is retained.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c7633386-5f66-5225-a8b8-b71f95c7adde@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:SIDE: ANZAC Day - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:97287d81-b9cf-5d8c-8e5b-777f9d75c782@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:SIDE: Students commence - Term 2\, Semester 1
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5d02f397-4643-5a1b-81f2-037f8ac66efb@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:SIDE: OLNA T2 Window A - Year 10s (11 and 12 no sit yet)
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c980b5e7-d4d2-5aa6-b906-b0a7c5717dd5@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270508
+SUMMARY:SIDE: Year 11 and 12 Semester 1 Exam Dispatch
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f5779fbb-553d-5039-9e33-d50e343b396c@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:171f82b9-e85b-595a-8f0d-96192a12f765@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:SIDE: SDD
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a27d8d5b-8937-5044-ab71-bc89534a2e1a@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270522
+SUMMARY:SIDE: ESTs
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7d7d8731-b348-5de3-a251-cf3db9ed2b8f@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270529
+SUMMARY:SIDE: Languages Oral Exams - EALD COAT
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b3063a25-4e72-5b19-918e-1aecef0a3fe0@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:SIDE: Common Out of Hours Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:66b12299-2a5f-56f8-a54f-98dd7ccfc10a@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270612
+SUMMARY:SIDE: Year 11 and Year 12 Semester 1 Exams
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied. No Webex/F2F teaching for AE/AT. Source repeats this e
+ vent in two weekly columns. Its heading says 31 May-9 June\, while the exa
+ m text explicitly says 31 May-11 June. The exam-text end date of 11 June i
+ s used\; confirm with SIDE.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:daf7a2a2-99d4-58fb-8dfe-ccfa46c8ec4e@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:SIDE: WA Day - Public Holiday
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9194df2f-0787-5f49-a8aa-6d4aa94c87aa@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270619
+SUMMARY:SIDE: SS Semester 2 starts
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1629509d-35df-5d1d-a1f8-9885502cd125@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270615
+SUMMARY:SIDE: OLNA T2 Window B - Year 10-12 catch up (no 2027 sit)
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:97abbc7b-1f49-50c5-88bc-8679b154dd86@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270619
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0d99d330-3efa-52ff-b3f5-5519d86e7de0@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:22c4d3ce-b125-56cd-b367-1ef22ede8a91@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270626
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5b397a17-95f9-557e-88ac-abf97506aeb1@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270703
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bbb477f9-c486-5693-93b8-7f29c3af87bc@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270703
+SUMMARY:SIDE: Country Week / Kimberley Cup - SHS
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3c3dbfd1-52b4-5348-a4db-789c5383ebf4@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270719
+SUMMARY:SIDE: School Break
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied. The event and side label give 3-18 July\; the column h
+ eading says 3-20 July. The event date range is retained.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:94113d73-1329-51ed-a7b8-545b2af01d46@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270720
+SUMMARY:SIDE: SDD
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8b355646-c5b6-53e6-a25d-d9ae979c2e86@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:SIDE: Students commence - Term 3\, Semester 2
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dbe3fe14-6b66-5bbe-b1f0-a3b1fc30aa30@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270727
+DTEND;VALUE=DATE:20270728
+SUMMARY:SIDE: Parent/Caregiver-Teacher Interviews
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a9b7d9f2-7238-5a46-97d5-6ddbc790080c@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b93ca7e0-8773-50f1-bf13-23aa9fdd8eb2@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:SIDE: Common Out of Hours Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:60352309-8dda-59be-8abc-d0ccc9c37789@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270904
+SUMMARY:SIDE: Year 12 Semester 2 Exam Dispatch
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0e7dac1f-58f4-5eb7-89e1-8c147061d809@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270906
+DTEND;VALUE=DATE:20270907
+SUMMARY:SIDE: OLNA Term 3 Window B - Year 11 and 12
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d30c0816-9069-544c-806b-1d74189f9d07@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:59feb473-8be3-5f66-b71c-99c659c80fed@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270918
+SUMMARY:SIDE: Languages Oral Exams
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:40bb4b0f-ed4d-5305-a16d-4380dfeb1721@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270920
+DTEND;VALUE=DATE:20270925
+SUMMARY:SIDE: Year 12 Semester 2 Exams
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied. No Webex/F2F teaching for AT Units.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0d895929-8fea-523e-b2bd-dacca8a07db9@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270920
+DTEND;VALUE=DATE:20270925
+SUMMARY:SIDE: Country Week - DHS
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f2f4dd9-d7fc-58e6-8b9d-cc05be034b71@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20271011
+SUMMARY:SIDE: School Break
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ff584889-3130-5faf-ba3a-f8bf822c8298@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:SIDE: Students commence - Term 4\, Semester 2
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:144ba455-811f-5f7b-a648-629bf8eb2f46@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271016
+SUMMARY:SIDE: Year 11 Semester 2 Exam Dispatch
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4cd52daa-1c51-5aa3-af3c-8e8990b7569e@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271023
+SUMMARY:SIDE: Reporting - Year 12 Statement of Results
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5b371a8d-e1c8-50a2-9795-fa311f002e11@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:SIDE: Formal Year 12 Classes End
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bdac9bd4-27be-5149-8b42-f7a554cfc72b@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271025
+DTEND;VALUE=DATE:20271026
+SUMMARY:SIDE: OLNA Term 4 Window - Year 10 Only
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c34907f4-24e7-5e67-a706-b5cc9c83c51d@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271027
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ec80a3e7-12e4-5a92-a05f-c13a53e1f68a@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271106
+SUMMARY:SIDE: Languages Oral Exams
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:492b4562-4beb-58d5-bb08-3f51ab8bc488@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271113
+SUMMARY:SIDE: Year 11 Semester 2 Exams
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied. No Webex/F2F teaching for AE Units.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:08e0c135-cd0c-57dd-9c35-b56966a26811@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:SIDE: Common Out of Hours Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f1095e22-4e22-58e7-954f-5f52e60ecc28@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+SUMMARY:SIDE: Year 11s Finish
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c7ec5d4f-1887-5e54-8f22-9b54c7fbc17f@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271122
+DTEND;VALUE=DATE:20271123
+SUMMARY:SIDE: SDD
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c408eaab-9af8-5654-aa74-5d7556c40a01@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271122
+DTEND;VALUE=DATE:20271127
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ddff3b6d-1061-53c2-be4c-2452b759cd63@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271129
+DTEND;VALUE=DATE:20271204
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:788efe7d-bee3-5c5c-aeb6-a2c8bbec9412@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271202
+DTEND;VALUE=DATE:20271203
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a9a1fe91-6ca9-5296-ac6c-25542aae21ac@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271206
+DTEND;VALUE=DATE:20271211
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb401c9c-a72e-5134-bf96-3243cf6a1b5c@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271216
+DTEND;VALUE=DATE:20271217
+SUMMARY:SIDE: Last day for Students
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ecfc6880-b91a-5537-aec9-fdc44caed355@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:SIDE: SDD - Teaching Staff
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:881d4831-1dbf-5f1e-a73c-810d25890dfd@side-calendar
+DTSTAMP:20261021T235333Z
+DTSTART;VALUE=DATE:20271218
+DTEND;VALUE=DATE:20280203
+SUMMARY:SIDE: School Break
+CATEGORIES:SIDE Operational Calendar 2027
+DESCRIPTION:Source: supplied SIDE Operational Calendar 2027. All-day event\
+ ; no time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2fabfbdd-0de3-5bff-b8cc-2a66de08965d@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261028
+SUMMARY:SIDE: OLNA Term 4 Window - Year 10\, TR Only
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ceff85d7-14fb-54c3-9c36-b6a717919cf4@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20449b38-f95d-533a-96dd-43687a5f8eeb@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261107
+SUMMARY:SIDE: Languages Oral Exams
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. Date range follows the weekly column heading.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:34e9521f-0f08-56ee-ac21-2e728ed80044@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261114
+SUMMARY:SIDE: Year 11 Semester 2 Exams / TR Workshop
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. No Webex/F2F teaching for ATAR 11s. TR Workshop appears wi
+ thin the exam block\; no separate workshop date is given.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eebfd1bb-bb31-5c0a-a87a-f568e0053782@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:SIDE: Leadership Planning Day
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:61e41ece-f5b7-518c-8897-1d7c03b355cb@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:SIDE: Common Out of Hours Meeting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3654f6eb-5b29-5e2b-9987-3f15c0b0e2e8@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:SIDE: Year 11s Finish
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c1d7a985-52c1-5ebb-b4d0-cb5d01d5c745@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261128
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. Date range follows the weekly column heading.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a6a324a-fe79-56bb-9e24-8c36f0b5c21e@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:SIDE: Term 4 SDD
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bffe619c-c1a5-5590-9b4e-b65f2bb5cbc4@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261205
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. Date range follows the weekly column heading.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2a16f8f9-dd51-5327-b8f0-bc78af31b704@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:SIDE: Whole Staff Meeting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:36d6df0b-af49-594f-ae5c-fd3f90fd53b8@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261212
+SUMMARY:SIDE: Reporting
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. Date range follows the weekly column heading.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6e405038-a23e-5aa5-8b33-7acfe777ebbd@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:SIDE: Last day for Students
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8075bdf0-6346-5dc5-90e8-39dfd31ce368@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:SIDE: SDD - Teaching Staff
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8eac3253-e71d-5ea1-a07d-02c2f8b7cf89@side-calendar
+DTSTAMP:20261021T235529Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270128
+SUMMARY:SIDE: School Break
+CATEGORIES:SIDE Operational Calendar 2026
+DESCRIPTION:Source: supplied 2026 Term 4 calendar image. All-day event\; no
+  time supplied. Source prints Sat 19 Dec 2025 to Wed 27 Jan 2027. Start ye
+ ar interpreted as 2026 to match the requested year\, the surrounding calen
+ dar\, and the printed Saturday. SIDE-specific break retained separately fr
+ om the existing WA public school holiday entry.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -60,6 +60,34 @@ try {
         $data['collections'][0]['items'] = []; });
     check(storageJson($root . '/' . historyFilename($month))['tiles'] === [], 'Deleted archive item reappeared');
     check(count(storageTransaction()['tiles']) === 4, 'Delete did not persist');
+    // Legacy jobs migrate once, without modifying IDs or revision counters.
+    $legacy = storageJson(DATA_FILE);
+    $legacy['jobs'] = [['id'=>'legacy-job', 'number'=>1, 'revision'=>3, 'subject'=>'Legacy']];
+    storageWrite(DATA_FILE, $legacy);
+    $migrated = storageTransaction();
+    check(count($migrated['jobs']) === 1, 'Legacy job was not migrated');
+    check(!array_key_exists('jobs', storageJson(DATA_FILE)), 'Jobs remain embedded in app.json');
+    check(storageJson($root.'/jobs.json')['jobs'][0]['revision'] === 3, 'Migration changed revisions');
+    check(count(storageTransaction()['jobs']) === 1, 'Migration duplicated jobs');
+    storageTransaction(function (&$data) { $data['jobs'][0]['subject'] = 'Updated'; });
+    check(storageJson($root.'/jobs.json')['jobs'][0]['subject'] === 'Updated', 'Job update was not saved');
+    $snapshot = storagePartitions(storageTransaction());
+    check(isset($snapshot['jobs.json']) && !isset($snapshot['app.json']['jobs']), 'Backup did not separate jobs');
+    $snapshot['jobs.json']['jobs'][0]['subject'] = 'Recovered job';
+    storageWrite($root.'/storage-journal.json', $snapshot);
+    check(storageTransaction()['jobs'][0]['subject'] === 'Recovered job', 'Journal did not recover jobs');
+    $legacy = storageJson(DATA_FILE);
+    $legacy['jobs'] = [['id'=>'legacy-job','subject'=>'Stale'],['id'=>'other-job','subject'=>'Keep me']];
+    storageWrite(DATA_FILE, $legacy);
+    $merged = storageTransaction();
+    check(count($merged['jobs']) === 2 && $merged['jobs'][0]['subject'] === 'Recovered job', 'Merge lost jobs or replaced canonical data');
+    $goodJobs = file_get_contents($root.'/jobs.json');
+    file_put_contents($root.'/jobs.json', '{bad json');
+    $rejected = false;
+    try { storageTransaction(); } catch (Throwable $error) { $rejected = true; }
+    check($rejected && file_get_contents($root.'/jobs.json') === '{bad json', 'Corrupt jobs were silently overwritten');
+    file_put_contents($root.'/jobs.json', $goodJobs);
+    echo "PASS: dedicated jobs file, legacy migration, idempotency, persistence, backups, journal recovery, merge, and corrupt-file protection.\n";
     echo "PASS: monthly rollover, missed months, stable collection IDs, idempotency, archived edits, backup partitioning, journal recovery, and archived deletion.\n";
 } finally {
     foreach (glob($root . '/*') ?: [] as $file)

@@ -1,5 +1,5 @@
-import { isInstagramLink } from "./link-metadata.js?v=20261022-upload-errors";
-import { Feature } from "./feature.js?v=20261022-upload-errors";
+import { isInstagramLink } from "./link-metadata.js?v=20261023-jobs-v14";
+import { Feature } from "./feature.js?v=20261023-jobs-v14";
 import {
   MEDIA_TYPES,
   state,
@@ -9,7 +9,7 @@ import {
   defaultTileLabel,
   displayText,
   tileColor,
-} from "./context.js?v=20261022-upload-errors";
+} from "./context.js?v=20261023-jobs-v14";
 
 export class MediaViewer extends Feature {
   constructor(services) {

@@ -1,6 +1,6 @@
-import { Feature } from "./feature.js?v=20261022-upload-errors";
-import { state, els, $, $$, escapeHtml } from "./context.js?v=20261022-upload-errors";
-import { api } from "./api.js?v=20261022-upload-errors";
+import { Feature } from "./feature.js?v=20261023-jobs-v14";
+import { state, els, $, $$, escapeHtml } from "./context.js?v=20261023-jobs-v14";
+import { api } from "./api.js?v=20261023-jobs-v14";
 
 const icon = (paths) =>
   `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;

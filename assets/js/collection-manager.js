@@ -1,6 +1,6 @@
-import { api } from "./api.js?v=20261022-upload-errors";
-import { Feature } from "./feature.js?v=20261022-upload-errors";
-import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261022-upload-errors";
+import { api } from "./api.js?v=20261023-jobs-v14";
+import { Feature } from "./feature.js?v=20261023-jobs-v14";
+import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261023-jobs-v14";
 
 export class CollectionManager extends Feature {
   constructor(services) {
@@ -360,7 +360,7 @@ export class CollectionManager extends Feature {
       "dragstart",
       (e) => {
         hideImportOverlay();
-        if (e.target.closest?.("[data-tile-id],.tile-ghost")) {
+        if (e.target.closest?.("[data-tile-id],.tile-ghost,.job-card,.job-drag-ghost")) {
           e.preventDefault();
           e.stopImmediatePropagation();
           return;

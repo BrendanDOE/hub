@@ -15,8 +15,22 @@
     ],
     "collections": true,
     "calendar": true,
-    "views": ["asymmetric", "equal"],
+    "views": [
+      "asymmetric",
+      "equal"
+    ],
     "editor": "content",
     "metadataFilters": true
+  },
+  {
+    "id": "jobs",
+    "title": "Jobs",
+    "filters": [],
+    "collections": false,
+    "calendar": false,
+    "views": [
+      "list"
+    ],
+    "editor": "entry"
   }
 ]

@@ -463,8 +463,13 @@ $action = $_GET['action'] ?? 'bootstrap';
 
 try {
     ensureStorage();
-    if (!in_array($action, ['bootstrap', 'content.download', 'tiles.download'], true) && $_SERVER['REQUEST_METHOD'] !== 'POST') fail('POST required', 405);
+    if (!in_array($action, ['bootstrap', 'content.download', 'tiles.download', 'jobs.attachment'], true) && $_SERVER['REQUEST_METHOD'] !== 'POST') fail('POST required', 405);
     switch ($action) {
+        case 'jobs.save':
+        case 'jobs.status':
+        case 'jobs.attachment':
+            require __DIR__.'/jobs.php';
+            break;
         case 'bootstrap':
             $data = readData();
             $needsMigration = false;
@@ -546,23 +551,7 @@ try {
 
         case 'calendar.upload':
             $file = normalizedFiles('calendar')[0] ?? null;
-            $postLimit = trim((string)ini_get('post_max_size'));
-            $postBytes = (float)$postLimit;
-            switch (strtolower(substr($postLimit, -1))) {
-                case 'g': $postBytes *= 1024;
-                case 'm': $postBytes *= 1024;
-                case 'k': $postBytes *= 1024;
-            }
-            if ($postBytes > 0 && (float)($_SERVER['CONTENT_LENGTH'] ?? 0) > $postBytes) {
-                fail('Calendar upload exceeds PHP post_max_size (' . $postLimit . '). Ask the host to increase the request limit.', 413);
-            }
-            $uploadError = $file['error'] ?? UPLOAD_ERR_NO_FILE;
-            if (in_array($uploadError, [UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE], true)) {
-                fail('Calendar upload exceeds the permitted file size. PHP upload_max_filesize is ' . ini_get('upload_max_filesize') . '.', 413);
-            }
-            if ($uploadError === UPLOAD_ERR_NO_FILE) fail('Choose an ICS file to upload.');
-            if ($uploadError === UPLOAD_ERR_PARTIAL) fail('The calendar upload was interrupted. Please try again.');
-            if ($uploadError !== UPLOAD_ERR_OK) fail('The server could not receive the calendar file. Ask the host to check PHP temporary storage and upload settings.', 500);
+            if (!$file || ($file['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) fail('Choose an ICS file to upload.');
             $original = basename((string)($file['name'] ?? 'calendar.ics'));
             if (strtolower(pathinfo($original, PATHINFO_EXTENSION)) !== 'ics') fail('Calendar files must use the .ics extension.');
             $content = (string)file_get_contents((string)$file['tmp_name']);
@@ -582,7 +571,7 @@ try {
         case 'settings.update':
             $input = bodyJson();
             $settings = [
-                'theme' => in_array(($input['theme'] ?? 'umber'), ['umber','midnight-blue','bubblegum','caramel','marble','carbon-lavender','indigold'], true) ? $input['theme'] : 'umber',
+                'theme' => in_array(($input['theme'] ?? 'umber'), ['umber','midnight','midnight-blue','bubblegum','caramel','marble','carbon-lavender','indigold'], true) ? $input['theme'] : 'umber',
                 'mode' => in_array(($input['mode'] ?? 'dark'), ['dark','light'], true) ? $input['mode'] : 'dark',
                 'alwaysShowTileDetails' => (bool)($input['alwaysShowTileDetails'] ?? false),
                 'gridRowLimit' => max(1, min(8, (int)($input['gridRowLimit'] ?? 3))),
@@ -830,7 +819,7 @@ try {
                     $items = array_values(array_unique(array_filter($rawItems, fn($tileId) => is_string($tileId) && isset($tilesById[$tileId]) && ($tilesById[$tileId]['section'] ?? 'dashboard') === $section))); 
                     $visibility = ($collection['visibility'] ?? 'public') === 'private' ? 'private' : 'public';
                     $owner = $visibility === 'private' ? ($collection['owner'] ?? '') : null;
-                    if ($visibility === 'private' && !in_array($owner, ['Brian','Brendan','Jasprit','Steve','Sydney'], true)) fail('Unknown collection user');
+                    if ($visibility === 'private' && !in_array($owner, ['Brian','Brendan','Jasprit','Steve','Sydney','Display'], true)) fail('Unknown collection user');
                     $out[] = ['visibility'=>$visibility,'owner'=>$owner,'id'=>$cid,'section'=>$section,'name'=>substr($name,0,60),'collapsed'=>(bool)($collection['collapsed'] ?? false),'items'=>$items];
                 }
                 $data['collections'] = $out; return $out;

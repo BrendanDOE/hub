@@ -20,7 +20,7 @@ function historyFilename(string $month): string {
 }
 function storageReplay(array $files): void {
     foreach ($files as $name => $data) {
-        if ($name !== 'app.json' && !preg_match('/^dashboard-(0[1-9]|1[0-2])-\d{4}\.json$/D', $name)) throw new RuntimeException('Invalid storage journal');
+        if ($name !== 'app.json' && $name !== 'jobs.json' && !preg_match('/^dashboard-(0[1-9]|1[0-2])-\d{4}\.json$/D', $name)) throw new RuntimeException('Invalid storage journal');
         storageWrite(dirname(DATA_FILE).'/'.$name, $data);
     }
 }
@@ -41,6 +41,8 @@ function storagePartitions(array $data): array {
     }
     $data['tiles'] = $current;
     unset($data['history']);
+    $archives['jobs.json'] = ['schemaVersion'=>1, 'jobs'=>array_values($data['jobs'] ?? [])];
+    unset($data['jobs']);
     $archives['app.json'] = $data;
     return $archives;
 }
@@ -57,6 +59,23 @@ function storageTransaction(?callable $callback = null): mixed {
         }
         if (!is_file(DATA_FILE)) storageWrite(DATA_FILE, defaultData());
         $data = array_replace(defaultData(), storageJson(DATA_FILE));
+        // Keep one lock/journal for jobs, dashboard data, and backup snapshots.
+        // Older installations stored jobs inside app.json; migrate without loss.
+        $jobsPath = $root.'/jobs.json';
+        $migrateJobs = array_key_exists('jobs', $data) || !is_file($jobsPath);
+        $legacyJobs = $data['jobs'] ?? [];
+        $savedJobs = is_file($jobsPath) ? storageJson($jobsPath) : ['schemaVersion'=>1, 'jobs'=>[]];
+        if (($savedJobs['schemaVersion'] ?? null) !== 1 || !isset($savedJobs['jobs']) || !is_array($savedJobs['jobs']) || !array_is_list($savedJobs['jobs']) || !is_array($legacyJobs) || !array_is_list($legacyJobs)) throw new RuntimeException('Invalid jobs.json: expected schemaVersion 1 and a jobs array');
+        $jobsById = [];
+        foreach ([$legacyJobs, $savedJobs['jobs']] as $source) {
+            $seen = [];
+            foreach ($source as $job) {
+                if (!is_array($job) || !is_string($job['id'] ?? null) || $job['id'] === '' || isset($seen[$job['id']])) throw new RuntimeException('Invalid or duplicate job ID');
+                $seen[$job['id']] = true;
+                $jobsById[$job['id']] = $job;
+            }
+        }
+        $data['jobs'] = array_values($jobsById);
         $data['history'] = [];
         $byId = [];
         foreach ($data['tiles'] as $tile) $byId[$tile['id']] = $tile;
@@ -74,7 +93,7 @@ function storageTransaction(?callable $callback = null): mixed {
         $zone = new DateTimeZone(getenv('HUB_TIMEZONE') ?: 'Australia/Perth');
         $now = new DateTimeImmutable('now', $zone);
         $currentMonth = $now->format('Y-m');
-        $changed = false;
+        $changed = $migrateJobs;
         foreach ($data['tiles'] as &$tile) {
             if (($tile['section'] ?? 'dashboard') !== 'dashboard' || !empty($tile['historyMonth'])) continue;
             $created = $tile['createdAt'] ?? $tile['dateAdded'] ?? null;

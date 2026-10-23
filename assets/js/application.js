@@ -1,9 +1,9 @@
 import {
   STEPPER_PREFERENCES,
   normalizePreference,
-} from "./preferences.js?v=20261022-upload-errors";
-import { api } from "./api.js?v=20261022-upload-errors";
-import { Feature } from "./feature.js?v=20261022-upload-errors";
+} from "./preferences.js?v=20261023-jobs-v14";
+import { api } from "./api.js?v=20261023-jobs-v14";
+import { Feature } from "./feature.js?v=20261023-jobs-v14";
 import {
   ENABLE_CALENDAR_MODULE,
   state,
@@ -14,7 +14,7 @@ import {
   escapeHtml,
   favicon,
   normalizeUrl,
-} from "./context.js?v=20261022-upload-errors";
+} from "./context.js?v=20261023-jobs-v14";
 
 export class Application extends Feature {
   constructor(services) {
@@ -112,6 +112,9 @@ export class Application extends Feature {
 
   renderAll() {
     this.services.collections.ensureCollections();
+    // Jobs toggles .workspace visibility; do it first so the calendar can
+    // measure its real width (hidden = 0px = wrongly picks weekly mode).
+    this.services.jobs?.render();
     this.services.calendar.renderCalendar();
     this.services.calendar.renderCalendarSettings();
     this.services.watchlist.renderGenreFilters();
@@ -136,12 +139,14 @@ export class Application extends Feature {
     try {
       const saved = JSON.parse(localStorage.getItem(THEME_KEY) || "null");
       if (!saved) return;
-      if (["Brian", "Brendan", "Jasprit", "Steve", "Sydney"].includes(saved.userProfile))
+      state.settings.automaticRefresh = saved.automaticRefresh === true;
+      if (["Brian", "Brendan", "Jasprit", "Steve", "Sydney", "Display"].includes(saved.userProfile))
         state.settings.userProfile = saved.userProfile;
       if (
         [
           "umber",
           "midnight-blue",
+          "midnight",
           "bubblegum",
           "caramel",
           "marble",
@@ -395,6 +400,38 @@ export class Application extends Feature {
     Object.values(this.services).forEach((feature) => feature.bindEvents?.());
     this.services.collections.setupDragAndDrop();
     this.setupTooltips();
+    this.setupAutomaticRefresh();
+  }
+
+  setupAutomaticRefresh() {
+    const toggle = $("#automaticRefresh");
+    toggle.checked = state.settings.automaticRefresh === true;
+    toggle.addEventListener("change", () => {
+      state.settings.automaticRefresh = toggle.checked;
+      this.saveLocalTheme();
+      $("#refreshStatus").textContent = toggle.checked ? "Refresh enabled" : "Refresh paused";
+    });
+    setInterval(() => this.refreshData(), 30000);
+  }
+
+  async refreshData() {
+    if (!state.settings.automaticRefresh || this.refreshing || document.hidden ||
+        document.querySelector("dialog[open]") || state.savingContent || this.services.jobs?.busy || this.services.jobs?.dragging || this.services.jobs?.resizing) return;
+    this.refreshing = true;
+    try {
+      const data = await api.bootstrap();
+      // A dialog may have opened while the request was in flight.
+      if (document.querySelector("dialog[open]") || state.savingContent || this.services.jobs?.busy || this.services.jobs?.dragging || this.services.jobs?.resizing) return;
+      for (const key of ["tiles", "collections", "bookmarks", "topLinks", "history", "calendar", "jobs", "fonts"]) {
+        if (data[key] !== undefined) state[key] = data[key];
+      }
+      this.services.editor.registerFontFaces();
+      this.renderAll();
+      this.services.board.layoutTiles();
+      $("#refreshStatus").textContent = "Updated " + new Date().toLocaleTimeString();
+    } catch (error) {
+      $("#refreshStatus").textContent = "Refresh failed; retrying in 30 seconds.";
+    } finally { this.refreshing = false; }
   }
 
   async handleClick(e) {
