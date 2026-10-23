@@ -6433,6 +6433,7 @@ html[data-theme=midnight][data-mode=light] {
 
 .jobs-filters button {
   display: flex;
+  flex: 1 auto;
   align-items: center;
   gap: 12px;
   text-align: left;
@@ -6528,6 +6529,7 @@ html[data-theme=midnight][data-mode=light] {
   border-radius: 20px;
   font-size: 10px;
   white-space: nowrap;
+  width: 100%;
 }
 
 .job-overdue {
@@ -6990,7 +6992,6 @@ html[data-theme=midnight][data-mode=light] {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 12px;
   font-size: 11px;
   color: var(--muted);
 }
@@ -7162,6 +7163,7 @@ html[data-theme=midnight][data-mode=light] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
 }
 
 .jobs-table .job-subject {
