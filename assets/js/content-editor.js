@@ -1,5 +1,5 @@
-import { api } from "./api.js?v=20261023-jobs-v15";
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
+import { api } from "./api.js?v=20261026-jobs-v16";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
 import {
   IMAGE_LIMIT,
   encode,
@@ -18,7 +18,7 @@ import {
   safeHostname,
   displayText,
   tileColor,
-} from "./context.js?v=20261023-jobs-v15";
+} from "./context.js?v=20261026-jobs-v16";
 
 export class ContentEditor extends Feature {
   constructor(services) {

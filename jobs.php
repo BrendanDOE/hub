@@ -16,7 +16,7 @@ if ($action === 'jobs.attachment') {
     header('Content-Disposition: attachment; filename="attachment"; filename*=UTF-8\'\''.rawurlencode($file['name']));
     readfile($path); exit;
 }
-$input = $action === 'jobs.status' ? bodyJson() : $_POST;
+$input = in_array($action, ['jobs.status', 'jobs.hide'], true) ? bodyJson() : $_POST;
 $jobId = $input['id'] ?? '';
 if (!is_string($jobId)) fail('Invalid job');
 $status = $input['status'] ?? 'Pending';
@@ -56,10 +56,12 @@ $result = mutateData(function (&$data) use ($action, $input, $jobId, $values, $u
     $data['jobs'] ??= []; $index = null;
     foreach ($data['jobs'] as $i => $job) if ($job['id'] === $jobId) { $index = $i; break; }
     if ($jobId !== '' && $index === null) fail('Job no longer exists', 404);
-    if ($action === 'jobs.status' && $index === null) fail('Job not found', 404);
+    if (in_array($action, ['jobs.status', 'jobs.hide'], true) && $index === null) fail('Job not found', 404);
     $old = $index !== null ? $data['jobs'][$index] : null;
     if ($old && (int)($input['revision'] ?? 0) !== $old['revision']) fail('This job changed elsewhere. Close and reopen it after refreshing before saving.', 409);
+    if ($action === 'jobs.hide' && !empty($old['hidden'])) fail('Job already hidden', 409);
     $job = array_replace($old ?? ['id'=>id('job'), 'number'=>1 + max([0, ...array_column($data['jobs'], 'number')]), 'createdAt'=>date(DATE_ATOM), 'attachments'=>[], 'revision'=>0], $values);
+    if ($action === 'jobs.hide') $job['hidden'] = true;
     foreach ($uploads as $file) {
         $path = storeUpload($file, $job['id']);
         if ($path) $job['attachments'][] = ['path'=>$path,'name'=>basename($file['name'])];

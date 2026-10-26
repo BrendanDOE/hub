@@ -1,6 +1,6 @@
-import { api } from "./api.js?v=20261023-jobs-v15";
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
-import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261023-jobs-v15";
+import { api } from "./api.js?v=20261026-jobs-v16";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
+import { state, $, $$, els, escapeHtml, defaultTileLabel } from "./context.js?v=20261026-jobs-v16";
 
 export class CollectionManager extends Feature {
   constructor(services) {

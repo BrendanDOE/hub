@@ -1140,3 +1140,18 @@ body.is-job-column-resizing * {
     flex: 1 1 100%;
   }
 }
+
+/* Reuse dashboard modal controls for the Edit Job actions. */
+.job-modal .job-modal-close {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: var(--text);
+  background: var(--panel);
+  font-size: 0;
+}
+.job-modal .job-modal-close:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+.job-form-footer .job-delete { margin-right: auto; }
+.job-form-footer .btn--danger { color: var(--danger); border-color: var(--danger); }
+.job-form-footer .btn--danger:hover { color: var(--bg); background: var(--danger); border-color: var(--danger); }

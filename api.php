@@ -467,6 +467,7 @@ try {
     switch ($action) {
         case 'jobs.save':
         case 'jobs.status':
+        case 'jobs.hide':
         case 'jobs.attachment':
             require __DIR__.'/jobs.php';
             break;

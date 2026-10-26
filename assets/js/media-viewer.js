@@ -1,5 +1,5 @@
-import { isInstagramLink } from "./link-metadata.js?v=20261023-jobs-v15";
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
+import { isInstagramLink } from "./link-metadata.js?v=20261026-jobs-v16";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
 import {
   MEDIA_TYPES,
   state,
@@ -9,7 +9,7 @@ import {
   defaultTileLabel,
   displayText,
   tileColor,
-} from "./context.js?v=20261023-jobs-v15";
+} from "./context.js?v=20261026-jobs-v16";
 
 export class MediaViewer extends Feature {
   constructor(services) {

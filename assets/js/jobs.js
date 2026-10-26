@@ -1,8 +1,8 @@
-import { JobsTable } from "./jobs-table.js?v=20261023-jobs-v15";
-import { JobsDrag } from "./jobs-drag.js?v=20261023-jobs-v15";
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
-import { state, $, escapeHtml as esc } from "./context.js?v=20261023-jobs-v15";
-import { api } from "./api.js?v=20261023-jobs-v15";
+import { JobsTable } from "./jobs-table.js?v=20261026-jobs-v16";
+import { JobsDrag } from "./jobs-drag.js?v=20261026-jobs-v16";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
+import { state, $, escapeHtml as esc } from "./context.js?v=20261026-jobs-v16";
+import { api } from "./api.js?v=20261026-jobs-v16";
 const TYPES = [
   ["Design", "Artwork, branding, and documents", "✦"],
   ["Print", "Print, finishing, and production", "▤"],
@@ -114,6 +114,16 @@ export class Jobs extends Feature {
     this.dialog.id = "jobModal";
     this.dialog.setAttribute("aria-labelledby", "jobTitle");
     document.body.append(this.dialog);
+    this.deleteDialog = document.createElement("dialog");
+    this.deleteDialog.className = "modal";
+    this.deleteDialog.innerHTML = `<div class="modal-card modal-card--confirm"><div class="modal-head"><div><div class="eyebrow">Jobs</div><h2 id="jobDeleteTitle">Delete job?</h2></div><button class="icon-btn modal-close capsule-x viewer-close" type="button" data-cancel-job-delete aria-label="Close"></button></div><p class="confirm-copy">This job will be hidden from the jobs dashboard, but its information and attachments will be retained.</p><div class="modal-actions"><button class="btn btn--ghost" type="button" data-cancel-job-delete>Cancel</button><button class="btn btn--danger" type="button" data-confirm-job-delete>Delete job</button></div></div>`;
+    this.deleteDialog.setAttribute("aria-labelledby", "jobDeleteTitle");
+    document.body.append(this.deleteDialog);
+    this.deleteDialog.addEventListener("click", (event) => {
+      if (event.target.closest("[data-cancel-job-delete]") && !this.busy) this.deleteDialog.close();
+      if (event.target.closest("[data-confirm-job-delete]")) this.hideJob();
+    });
+    this.deleteDialog.addEventListener("cancel", (event) => { if (this.busy) event.preventDefault(); });
     document.addEventListener("hub:tab-change", this.render);
     this.root.addEventListener("click", (e) => {
       if (this.dragging) return;
@@ -263,6 +273,7 @@ export class Jobs extends Feature {
     this.dialog.addEventListener("click", (e) => {
       if (e.target.closest("[data-job-close]") && !this.busy)
         this.dialog.close();
+      if (e.target.closest("[data-delete-job]") && !this.busy && this.editing) this.deleteDialog.showModal();
       const copy = e.target.closest("[data-copy-project-path]");
       if (copy) this.copyProjectPath(copy);
       if (e.target.closest("[data-add-asset]")) this.addAsset();
@@ -282,7 +293,7 @@ export class Jobs extends Feature {
     this.render();
   }
   get items() {
-    return state.jobs || [];
+    return (state.jobs || []).filter((job) => !job.hidden);
   }
   matches(j, filter = this.filter) {
     return (
@@ -546,11 +557,11 @@ export class Jobs extends Feature {
       required = false,
     ) =>
       `<label class="field ${name === "description" ? "job-wide" : ""}"><span>${label}${required ? " *" : ""}</span>${options ? `<select name="${name}">${options.map((v) => `<option ${j[name] === v ? "selected" : ""}>${esc(v)}</option>`).join("")}</select>` : name === "description" ? `<textarea name="description" maxlength="10000" rows="5">${esc(j[name] || "")}</textarea>` : `<input name="${name}" type="${inputType}" value="${esc(j[name] || "")}" ${required ? "required" : ""} ${inputType === "number" ? 'min="1" max="1000000"' : 'maxlength="1000"'}>`}</label>`;
-    this.dialog.innerHTML = `<form id="jobForm"><header class="jobs-heading"><div><span class="jobs-eyebrow">${job ? "JOB-" + job.number : "NEW REQUEST"}</span><h2 id="jobTitle">${job ? "Edit job" : "Create a new job"}</h2></div><button type="button" class="icon-btn" data-job-close aria-label="Close job form">×</button></header><div class="job-form-body"><div class="job-form-grid"><section class="job-form-section"><h3>Job details</h3>${field("requester", "Requester", null, "text", true)}${field(
+    this.dialog.innerHTML = `<form id="jobForm"><header class="jobs-heading"><div><span class="jobs-eyebrow">${job ? "JOB-" + job.number : "NEW REQUEST"}</span><h2 id="jobTitle">${job ? "Edit job" : "Create a new job"}</h2></div><button type="button" class="capsule-x viewer-close job-modal-close" data-job-close aria-label="Close job form"></button></header><div class="job-form-body"><div class="job-form-grid"><section class="job-form-section"><h3>Job details</h3>${field("requester", "Requester", null, "text", true)}${field(
       "jobType",
       "Job type",
       TYPES.map((t) => t[0]),
-    )}${field("department", "Department", this.departmentOptions(j.department))}${field("subject", "Subject", null, "text", true)}${field("description", "Description")}<div class="job-form-pair">${field("dueDate", "Due date", null, "date")}${field("priority", "Priority", ["Low", "Medium", "High", "Urgent"])}</div></section><section class="job-form-section"><h3>Assignment & production</h3>${field("assignedTo", "Assigned to", this.userOptions(j.assignedTo))}${field("status", "Status", STATUSES)}<div id="jobProduction">${field("artworkType", "Artwork type", ["", ...ARTWORK])}<div class="job-form-pair">${field("copies", "Number of copies", null, "number")}${field("finishedSize", "Finished size", ["A4 (210 × 297 mm)", "A3 (297 × 420 mm)", "A5 (148 × 210 mm)", "DL (110 × 220 mm)", "Custom"])}</div>${field("paperWeight", "Paper weight", ["N/A", "80 gsm", "100 gsm", "150 gsm", "200 gsm", "250 gsm", "300 gsm", "350 gsm", "Other"])}${field("colour", "Colour", ["Full colour", "Black and white", "Spot colour"])}</div></section></div><section class="job-project-assets"><h3>Project Assets</h3><div class="project-assets-list" id="projectAssets">${this.assetsFor(j).map((a) => this.assetRow(a)).join("")}<button type="button" class="project-asset-add" data-add-asset>Add Additional Folder</button></div></section><section class="job-attachments"><h3>Attachments</h3><div>${job ? this.attachments(job) : ""}</div><label class="field"><span>Add files (up to 20 MB each)</span><input type="file" name="attachments[]" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.txt,.csv,.docx,.xlsx,.pptx,.zip"></label><small>PDF, images, Office documents, text, CSV, and ZIP files.</small></section><p id="jobError" role="alert"></p></div><footer class="job-form-footer"><button type="button" data-job-close>Cancel</button><button type="submit" class="job-save">${job ? "Save changes" : "Create job"}</button></footer></form>`;
+    )}${field("department", "Department", this.departmentOptions(j.department))}${field("subject", "Subject", null, "text", true)}${field("description", "Description")}<div class="job-form-pair">${field("dueDate", "Due date", null, "date")}${field("priority", "Priority", ["Low", "Medium", "High", "Urgent"])}</div></section><section class="job-form-section"><h3>Assignment & production</h3>${field("assignedTo", "Assigned to", this.userOptions(j.assignedTo))}${field("status", "Status", STATUSES)}<div id="jobProduction">${field("artworkType", "Artwork type", ["", ...ARTWORK])}<div class="job-form-pair">${field("copies", "Number of copies", null, "number")}${field("finishedSize", "Finished size", ["A4 (210 × 297 mm)", "A3 (297 × 420 mm)", "A5 (148 × 210 mm)", "DL (110 × 220 mm)", "Custom"])}</div>${field("paperWeight", "Paper weight", ["N/A", "80 gsm", "100 gsm", "150 gsm", "200 gsm", "250 gsm", "300 gsm", "350 gsm", "Other"])}${field("colour", "Colour", ["Full colour", "Black and white", "Spot colour"])}</div></section></div><section class="job-project-assets"><h3>Project Assets</h3><div class="project-assets-list" id="projectAssets">${this.assetsFor(j).map((a) => this.assetRow(a)).join("")}<button type="button" class="project-asset-add" data-add-asset>Add Additional Folder</button></div></section><section class="job-attachments"><h3>Attachments</h3><div>${job ? this.attachments(job) : ""}</div><label class="field"><span>Add files (up to 20 MB each)</span><input type="file" name="attachments[]" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.txt,.csv,.docx,.xlsx,.pptx,.zip"></label><small>PDF, images, Office documents, text, CSV, and ZIP files.</small></section><p id="jobError" role="alert"></p></div><footer class="job-form-footer">${job ? `<button type="button" class="btn btn--danger job-delete" data-delete-job>Delete</button>` : ""}<button type="button" class="btn btn--ghost" data-job-close>Cancel</button><button type="submit" class="job-save">${job ? "Save changes" : "Create job"}</button></footer></form>`;
     this.togglePrint();
     this.syncAssetRows();
     this.dialog.showModal();
@@ -665,8 +676,28 @@ export class Jobs extends Feature {
       submit.textContent = this.editing ? "Save changes" : "Create job";
     }
   }
+  async hideJob() {
+    if (this.busy || !this.editing) return;
+    this.busy = true;
+    const confirmButton = this.deleteDialog.querySelector("[data-confirm-job-delete]");
+    confirmButton.disabled = true;
+    try {
+      const hidden = await api.hideJob(this.editing);
+      state.jobs = (state.jobs || []).map((job) => job.id === hidden.id ? hidden : job);
+      this.deleteDialog.close();
+      this.dialog.close();
+      this.editing = null;
+      this.render();
+      this.services.application.toast("Job deleted");
+    } catch (error) {
+      this.services.application.toast(error.message || "Could not delete job", "error");
+    } finally {
+      this.busy = false;
+      confirmButton.disabled = false;
+    }
+  }
   replace(job, quiet = false) {
-    state.jobs = this.items.filter((j) => j.id !== job.id).concat(job);
+    state.jobs = (state.jobs || []).filter((j) => j.id !== job.id).concat(job);
     quiet ? this.refresh() : this.render();
   }
   async changeStatus(job, status) {

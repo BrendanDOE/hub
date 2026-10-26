@@ -1,4 +1,4 @@
-import { cleanLinkInfo, cleanLinkTile } from "./link-metadata.js?v=20261023-jobs-v15";
+import { cleanLinkInfo, cleanLinkTile } from "./link-metadata.js?v=20261026-jobs-v16";
 const API_URL = "api.php";
 
 async function request(action, options = {}) {
@@ -202,6 +202,7 @@ export const api = {
   },
   saveJob: (form) => request("jobs.save", { method: "POST", body: form }),
   setJobStatus: (job, status) => request("jobs.status", { method: "POST", body: JSON.stringify({id: job.id, revision: job.revision, status}) }),
+  hideJob: (job) => request("jobs.hide", { method: "POST", body: JSON.stringify({id: job.id, revision: job.revision}) }),
   saveSettings: (settings) =>
     request("settings.update", {
       method: "POST",

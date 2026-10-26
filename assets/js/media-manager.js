@@ -1,5 +1,5 @@
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
-import { IMAGE_LIMIT, encode, escapeHtml } from "./context.js?v=20261023-jobs-v15";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
+import { IMAGE_LIMIT, encode, escapeHtml } from "./context.js?v=20261026-jobs-v16";
 
 export class MediaManager extends Feature {
   constructor(services) {

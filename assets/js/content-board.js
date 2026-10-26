@@ -1,7 +1,7 @@
-import { layoutMosaic } from "./mosaic-layout.js?v=20261023-jobs-v15";
-import { isInstagramLink } from "./link-metadata.js?v=20261023-jobs-v15";
-import { api } from "./api.js?v=20261023-jobs-v15";
-import { Feature } from "./feature.js?v=20261023-jobs-v15";
+import { layoutMosaic } from "./mosaic-layout.js?v=20261026-jobs-v16";
+import { isInstagramLink } from "./link-metadata.js?v=20261026-jobs-v16";
+import { api } from "./api.js?v=20261026-jobs-v16";
+import { Feature } from "./feature.js?v=20261026-jobs-v16";
 import {
   state,
   els,
@@ -11,7 +11,7 @@ import {
   defaultTileLabel,
   displayText,
   tileColor,
-} from "./context.js?v=20261023-jobs-v15";
+} from "./context.js?v=20261026-jobs-v16";
 
 export class ContentBoard extends Feature {
   constructor(services) {
